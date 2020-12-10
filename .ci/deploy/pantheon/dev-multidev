@@ -14,7 +14,7 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 # Prepare for Pantheon
 composer run prepare-for-pantheon
 
-$TERMINUS_ENV
+echo $TERMINUS_ENV
 terminus list
 
 
