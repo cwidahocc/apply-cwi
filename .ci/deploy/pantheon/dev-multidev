@@ -14,6 +14,11 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 # Prepare for Pantheon
 composer run prepare-for-pantheon
 
+terminus --help
+echo $TERMINUS_TOKEN
+echo $TERMINUS_SITE
+echo $TERMINUS_ENV
+
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
   # Create a new multidev environment (or push to an existing one)

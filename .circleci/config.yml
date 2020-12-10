@@ -160,7 +160,7 @@ jobs:
       # Deploy to Pantheon
       - run:
           name: deploy to Pantheon
-          no_output_timeout: 30m
+          no_output_timeout: 10m
           command: ./.ci/deploy/pantheon/dev-multidev
 
   behat_test:
