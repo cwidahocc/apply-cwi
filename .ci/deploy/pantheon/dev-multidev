@@ -14,17 +14,18 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 # Prepare for Pantheon
 composer run prepare-for-pantheon
 
-terminus --help
-echo $TERMINUS_TOKEN
-echo $TERMINUS_SITE
-echo $TERMINUS_ENV
+$TERMINUS_ENV
+terminus list
+
 
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
   # Create a new multidev environment (or push to an existing one)
+  echo Push to multidev $TERMINUS_ENV
   terminus -n build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes
 else
   # Push to the dev environment
+  echo Push master to Dev
   terminus -n build:env:push "$TERMINUS_SITE.dev" --yes
 fi
 
