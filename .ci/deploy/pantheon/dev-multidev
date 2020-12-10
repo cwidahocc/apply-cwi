@@ -14,6 +14,7 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 # Prepare for Pantheon
 composer run prepare-for-pantheon
 
+ech0 $TERMINUS_SITE
 echo $TERMINUS_ENV
 terminus list
 terminus site:list
@@ -21,8 +22,7 @@ terminus self:config:dump
 terminus self:info
 terminus env:list apply-cwi
 
-# force stop
-$TERMINUS_ENV
+
 
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then

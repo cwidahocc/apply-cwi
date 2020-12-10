@@ -36,6 +36,8 @@ defaults: &defaults
     # SITE_BASIC_AUTH
     #
     #=========================================================================
+    # force stop
+    TERMINUS_SITE: apply-cwi
     TZ: "/usr/share/zoneinfo/America/Boise"
 
     # The variables below usually do not need to be modified.
