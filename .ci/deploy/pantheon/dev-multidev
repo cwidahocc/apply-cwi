@@ -28,7 +28,7 @@ if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
   # Create a new multidev environment (or push to an existing one)
   echo Push to multidev $TERMINUS_ENV
-  terminus -n build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes -vvv
+  terminus build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes -vvv
 else
   # Push to the dev environment
   echo Push master to Dev
