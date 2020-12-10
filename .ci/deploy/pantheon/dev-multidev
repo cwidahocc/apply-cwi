@@ -19,7 +19,7 @@ terminus list
 terminus site:list
 terminus self:config:dump
 terminus self:info
-terminus env:list
+terminus env:list apply-cwi
 
 
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
