@@ -21,6 +21,8 @@ terminus self:config:dump
 terminus self:info
 terminus env:list apply-cwi
 
+# force stop
+$TERMINUS_ENV
 
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
