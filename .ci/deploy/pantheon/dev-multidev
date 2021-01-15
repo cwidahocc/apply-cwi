@@ -36,7 +36,7 @@ else
 fi
 
 # Update the Drupal database
-#terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y #removed for error "Command updatedb needs a higher bootstrap level to run"
+terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y #removed for error "Command updatedb needs a higher bootstrap level to run, check Pantheon Web doc root"
 
 # If exported configuration is available, then import it.
 if [ -f "config/system.site.yml" ] ; then
