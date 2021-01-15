@@ -28,7 +28,7 @@ if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
   # Create a new multidev environment (or push to an existing one)
   echo Push to multidev $TERMINUS_ENV
-  terminus build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes -vvv
+  terminus -n build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes # -vvv for verbose reporting
 else
   # Push to the dev environment
   echo Push master to Dev
@@ -36,7 +36,7 @@ else
 fi
 
 # Update the Drupal database
-terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
+#terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y #removed for error "Command updatedb needs a higher bootstrap level to run"
 
 # If exported configuration is available, then import it.
 if [ -f "config/system.site.yml" ] ; then
