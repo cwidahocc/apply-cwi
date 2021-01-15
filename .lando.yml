@@ -1,0 +1,6 @@
+name: apply-cwi
+recipe: pantheon
+config:
+  framework: drupal8
+  site: apply-cwi
+  id: 17d00c52-eb14-4205-aab3-8bca90567955
