@@ -4,9 +4,11 @@ const devURL = process.env.DEV_SITE_URL.replace(/\/$/, "");
 // Stash multidev URL, removing any trailing slash
 const multidevURL = process.env.MULTIDEV_SITE_URL.replace(/\/$/, "");
 
+echo multidevURL
+
 const pathsToTest = {
     'Homepage': '/',
-    'Hello World': '/user/login',
+    'User Login': '/user/login',
 }
 
 let scenariosToTest = [];

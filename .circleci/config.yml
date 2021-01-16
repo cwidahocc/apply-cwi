@@ -225,6 +225,7 @@ jobs:
       - run: echo "export CI_REPOSITORY_URL='${CIRCLE_REPOSITORY_URL}'" >> $BASH_ENV
       - run: echo "export ARTIFACTS_DIR_URL='${CIRCLE_BUILD_URL}/artifacts/${CIRCLE_NODE_INDEX}/artifacts'" >> $BASH_ENV
       - run: source $BASH_ENV
+      - run: echo $BASH_ENV
 
       - run:
           name: visual regression test
