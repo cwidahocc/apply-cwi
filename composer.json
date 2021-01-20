@@ -21,6 +21,7 @@
         "drupal/maillog": "^1.0@beta",
         "drupal/telephone_validation": "^2.3",
         "drupal/token": "^1.9",
+        "drupal/views_data_export": "^1.0",
         "drupal/webform": "^5.23",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^8.4.5",
