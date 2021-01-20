@@ -17,6 +17,7 @@
         "drupal/clientside_validation": "^2.0@RC",
         "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^2.1",
         "drupal/maillog": "^1.0@beta",
         "drupal/telephone_validation": "^2.3",
         "drupal/token": "^1.9",
