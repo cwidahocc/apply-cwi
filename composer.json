@@ -26,6 +26,7 @@
         "drupal/token": "^1.9",
         "drupal/views_data_export": "^1.0",
         "drupal/webform": "^5.0",
+        "drupal/webform_encrypt": "^1.0@alpha",
         "drupal/webform_views": "^5.0@alpha",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^8.4.5",
